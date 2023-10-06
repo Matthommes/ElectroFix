@@ -1,7 +1,9 @@
+import Landing from "./components/Landing";
+
 function App() {
   return (
     <>
-      <h1>Hello React</h1>
+      <Landing />
     </>
   );
 }
