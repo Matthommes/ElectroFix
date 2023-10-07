@@ -1,9 +1,13 @@
+import Header from "./components/Header";
 import Landing from "./components/Landing";
 
 function App() {
   return (
     <>
-      <Landing />
+      <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+        <Header />
+        <Landing />
+      </div>
     </>
   );
 }
