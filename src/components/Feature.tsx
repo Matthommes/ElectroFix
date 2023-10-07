@@ -51,7 +51,7 @@ export default function Feature() {
             {features.map((feature) => (
               <div
                 key={feature.name}
-                className="relative px-20 pb-10  shadow-lg hover:shadow-xl  rounded-2xl w-[33rem]"
+                className="relative px-20 pb-10  shadow-lg hover:shadow-xl  rounded-2xl "
               >
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-14 w-14  items-center justify-center rounded-lg bg-blue-600">

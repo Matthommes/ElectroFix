@@ -28,7 +28,7 @@ const Landing = () => {
         </div>
         <section>
           <div className="py-4">
-            <h1 className="font-bold tracking-normal py-4 text-gray-800 sm:text-7xl">
+            <h1 className="font-bold tracking-normal py-4 text-5xl text-gray-800 sm:text-7xl">
               Our Services
             </h1>
             <h3 className=" py-8 mx-auto max-w-4xl font-display text-2xl font-small tracking-normal text-black sm:text-2xl">
