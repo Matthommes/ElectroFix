@@ -1,9 +1,10 @@
 import Feature from "./Feature";
+import Services from "./Services";
 
 const Landing = () => {
   return (
     <>
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-16 background-gradient">
+      <main className="  w-full flex-col items-center justify-center text-center sm:mt-20 mt-10 ">
         <a
           href="http://twitter.com/matthewakahomen"
           target="_blank"
@@ -23,24 +24,11 @@ const Landing = () => {
             maintenance needs.
           </h2>
           <button className=" border px-4 py-3 rounded-lg bg-black font-bold text-white hover:bg-gray-600 hover:text-gray-300">
-            Call an engineer
+            <a href="tel:+2348056469616"> Call an engineer</a>
           </button>
         </div>
         <section>
-          <div className="py-4">
-            <h1 className="font-bold tracking-normal py-4 text-5xl text-gray-800 sm:text-7xl">
-              Our Services
-            </h1>
-            <h3 className=" py-8 mx-auto max-w-4xl font-display text-2xl font-small tracking-normal text-black sm:text-2xl">
-              Discover top-notch auto electrical services at{" "}
-              <span className="font-bold text-gray-800">ElectroFix</span>. From
-              diagnostics to installations, we ensure your vehicle's electrical
-              systems perform at their best. Our skilled technicians bring
-              precision and expertise to every task, prioritizing quality in both
-              service and parts. Explore our range of services designed to keep
-              you on the road with reliability and efficiency."
-            </h3>
-          </div>
+          <Services />
           <h1 className=" text-5xl font-bold">
             Power-Packed <br /> Features
           </h1>

@@ -4,7 +4,7 @@ import Landing from "./components/Landing";
 function App() {
   return (
     <>
-      <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen px-8">
+      <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 px-2 sm:p-8 min-h-screen">
         <Header />
         <Landing />
       </div>

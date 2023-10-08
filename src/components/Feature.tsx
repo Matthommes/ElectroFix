@@ -51,12 +51,12 @@ export default function Feature() {
             {features.map((feature) => (
               <div
                 key={feature.name}
-                className="relative px-20 pb-10  shadow-lg hover:shadow-xl  rounded-2xl "
+                className="relative sm:px-20 pl-14 pr-2 pb-10 shadow-lg hover:shadow-xl rounded-2xl text-left "
               >
                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-14 w-14  items-center justify-center rounded-lg bg-blue-600">
+                  <div className="absolute left-0 top-0 flex sm:h-14 sm:w-14 w-10 h-10  items-center justify-center rounded-lg bg-blue-600">
                     <feature.icon
-                      className="h-10 w-10 text-white"
+                      className="sm:h-10 sm:w-10 h-6 w-6 text-white"
                       aria-hidden="true"
                     />
                   </div>
@@ -65,7 +65,7 @@ export default function Feature() {
                 <dd className="mt-2 text-base leading-7 text-gray-600 mb-20">
                   {feature.description}
                 </dd>
-                <div className="flex absolute bottom-1 py-4">
+                <div className="flex absolute bottom-1 left-1/4 py-4">
                   <button className=" mr-2 font-bold text-lg text-gray-700 peer">
                     Learn more
                   </button>
