@@ -5,6 +5,7 @@ import {
   PhoneIcon,
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,23 +20,20 @@ const HamburgerMenu = () => {
     <div>
       <button className="sm:hidden" onClick={toggleMenu}>
         {icon === "bar" ? (
-          <Bars4Icon width={26} className=" mx-3 p-0" />
+          <Bars4Icon width={26} />
         ) : (
-          <XMarkIcon width={26} className=" mx-3 p-0" />
+          <XMarkIcon width={26} />
         )}
       </button>
       <div
         className={` absolute sm:invisible ${
           isOpen ? "" : "invisible"
-        }  right-4 `}
+        }  right-4`}
       >
         <div className=" flex">
-          <a
-            href="tel:+2348056469616"
-            className="bg-slate-300 shadow-lg rounded-sm p-3"
-          >
+          <Link to="/booking" className="bg-slate-300 shadow-lg rounded-sm p-3">
             <PhoneIcon width={24} className=" " />
-          </a>
+          </Link>
 
           <a
             href="http://shop.com"

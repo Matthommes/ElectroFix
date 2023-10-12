@@ -1,5 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import HamburgerMenu from "./Menu";
+import { Link } from "react-router-dom";
 export default function Header() {
   const isMobile = useMediaQuery({ maxWidth: 576 });
   return (
@@ -10,9 +11,9 @@ export default function Header() {
         {isMobile ? (
           <HamburgerMenu />
         ) : (
-          <div >
-            <button className=" border rounded-lg px-4 py-2 mr-2 font-bold border-black ">
-              Call an engineer
+          <div>
+            <button className=" border rounded-lg px-4 py-2 mr-2 font-bold border-black hover:bg-black hover:text-white">
+              <Link to="/booking">Book an appointment</Link>
             </button>
             <button className=" border px-4 py-2 rounded-lg bg-black font-bold text-white  hover:bg-gray-600 hover:text-gray-300">
               Shop
