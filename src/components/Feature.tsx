@@ -1,12 +1,9 @@
-
 import {
   CheckBadgeIcon,
   WrenchScrewdriverIcon,
   UserGroupIcon,
-  LockClosedIcon
+  LockClosedIcon,
 } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
-
 
 interface FeatureProps {
   name: string;
@@ -75,26 +72,12 @@ const Feature: React.FC = () => {
                 <dd className="mt-2 text-base leading-7 text-gray-600 ">
                   {feature.description}
                 </dd>
-                {/* <div className="flex absolute bottom-1 left-1/5 py-4">
-                 <button className="mr-2 font-bold text-lg text-gray-700 peer">
-                    <Link to={`/features/${index}`}>Learn more</Link>
-                  </button>
-                  
-                  <ArrowRightIcon
-                    width={24}
-                    color="blue"
-                    className="cursor-pointer peer-hover:translate-x-1"
-                  />
-                </div> */}
               </div>
             ))}
           </dl>
         </div>
       </div>
-      
     </div>
-
-  
   );
 };
 
